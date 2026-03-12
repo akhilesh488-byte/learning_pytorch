@@ -5,3 +5,4 @@ torch
 torchvision
 notebook
 sklearn
+h5py
