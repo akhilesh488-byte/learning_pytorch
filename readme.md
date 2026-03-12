@@ -1,4 +1,4 @@
-
+```
 General machine learning project repo structure:
     project/
         data/
@@ -49,3 +49,4 @@ pytorch learning journey:
     ------------------------------------------------------------------------------------------------------------------------------
     12/03/2026: implemented cat or nocat dataset, strenthened my understanding, learned how to load h5 files, learned how to run the model using different hyperparameters using a user defined function for training the model and everytime you run the cell, the model is reinitialized and trained with the new hyperparameters.
 
+```
