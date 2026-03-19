@@ -3,6 +3,8 @@ pandas
 matplotlib
 torch
 torchvision
+torchsummary
 notebook
 sklearn
 h5py
+tensorflow
