@@ -52,4 +52,6 @@ pytorch learning journey:
     18/03/2026: learned how to implement cnn using pytorch and implementing cnn is difficult compared tensorflow, tensorflow is so simple and easy to use, it took me hours to learn torch cnn 😭.
     19/03/2026: implementation of cnn in pytorch is complete, now i know the pipeline and how things work, but i think i still need practice to get used to it, because there are a lot of things to keep in mind, on every step i need to be aware of what's happening and what is the dimension of the data, one single mistake can breaks the whole thing.
     next -> practice cnn more.
+    25/03/2026: built a model using resnet18 architecture, trained on animals10 dataset, got 96.50% accuracy on test set after data augmentation.
+    next -> more cnn practice, object localization using yolo.
 ```

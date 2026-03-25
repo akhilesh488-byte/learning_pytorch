@@ -1,6 +1,6 @@
 venv/
 datasets/
 *.h5
-*.pth
+saved_models/
 .ipynb_checkpoints/
 __pycache__/
