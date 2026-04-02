@@ -54,4 +54,6 @@ pytorch learning journey:
     next -> practice cnn more.
     25/03/2026: built a model using resnet18 architecture, trained on animals10 dataset, got 96.50% accuracy on test set after data augmentation.
     next -> more cnn practice, object localization using yolo.
+    ------------------------------------------------------------------------------------------------------------------------------01/04/2026: I was evaluating the facenet model on the lfw dataset on different thresholds then my venv broke because i updated my python version from python 3.10 to python 3.14, so i had to create a new venv and install all the packages again, but venv broke again because of some package incompatibility, so i had to uninstall new python version and reinstall python 3.10 and create a new venv and install all the packages again and this toke a lot of time becuase kernel was not detecting my venv, but finally i was able to fix it and now i am back to learning and evaluating the model.
+    02/04/2026: Evaluated the facenet model on lfw dataset and i found the best threshold that gave 96% accuracy on test set.
 ```

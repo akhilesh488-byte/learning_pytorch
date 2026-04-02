@@ -5,6 +5,7 @@ torch
 torchvision
 torchsummary
 notebook
-sklearn
+scikit-learn
 h5py
 tensorflow
+facenet_pytorch
