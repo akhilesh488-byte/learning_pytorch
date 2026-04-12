@@ -1,11 +1,13 @@
-numpy
-pandas
-matplotlib
-torch
-torchvision
-torchsummary
-notebook
-scikit-learn
-h5py
-tensorflow
-facenet_pytorch
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.8.4
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==2.2.0+cu121
+torchvision==0.17.0+cu121
+torchaudio==2.2.0+cu121
+torchsummary==1.5.1
+notebook==7.1.2
+scikit-learn==1.4.2
+h5py==3.11.0
+tensorflow==2.15.0
+facenet-pytorch==2.6.0

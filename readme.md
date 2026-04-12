@@ -1,5 +1,25 @@
 ```
-General machine learning project repo structure:
+This repository consists of classic deep learning projects implemented using PyTorch. The main goal of this repository is to learn how to structure deep learning projects, and to learn how to use PyTorch for building and training deep learning models.
+
+This repository is a work in progress, and I will be adding more projects and improving the existing ones as I learn more about deep learning and PyTorch.
+
+This repository is not meant to be a complete guide to deep learning or PyTorch, but rather a collection of projects that I have implemented as part of my learning journey. I will be sharing my thoughts and experiences as I learn and implement these projects.
+
+This repository consists of the following notebooks:
+    1. tensors_and_datasets.ipynb * Covers basic operations on tensors and datasets, and how to utilize them within PyTorch.
+    2. linear_regression.ipynb * Implementation of linear regression using synthetic data.
+    3. logistic_regression.ipynb * Implementation of logistic regression using the make_circles dataset from Scikit-Learn.
+    Loss Function: BCEWithLogitsLoss
+    Performance: Achieved a test loss of 0.16.
+    4. cat_or_notcat.ipynb * An Artificial Neural Network (ANN) built with a custom architecture to classify images as "cat" or "non-cat".
+    5. hand_signs.ipynb * A Convolutional Neural Network (CNN) built to classify hand signs.
+    Performance: Achieved a test accuracy of 90%.
+    6. animals10.ipynb * A CNN model utilizing the ResNet18 architecture to classify animals from the Animals-10 dataset.
+    Performance: Achieved a test accuracy of 96.5%.
+    7. face_recognition.ipynb * Evaluation of the FaceNet model using the Inception ResNet V1 architecture on the LFW (Labeled Faces in the Wild) dataset.
+    Performance: Achieved a test accuracy of 96.3%.
+
+ML project repository structure that works on almost all ML/DL projects:
     project/
         data/
             dataset.py       # your Dataset class and dataloader logic
@@ -11,28 +31,32 @@ General machine learning project repo structure:
         config.py            # all your settings in one place (paths, hyperparameters)
         train.py             # training loop
         evaluate.py          # evaluation logic
+        README.md            # project overview and instructions
+        .gitignore           # to ignore unnecessary files and folders
 
-my repo structure for learning pytorch:
+Since I am learning pytorch and learning to implement DL models I will be using the following repo structure:
     learning_pytorch/
-    │
-    ├── notebooks/                  ← only .ipynb files here
-    │   ├── tensors_and_datasets.ipynb
-    │   ├── linear_regression.ipynb
-    │   ├── logistic_regression.ipynb
-    │   └── cat_or_notcat.ipynb
-    │
-    ├── saved_models/               ← all .pth files here
-    │   ├── linear_model.pth
-    │   └── logistic_regression_model.pth
-    │
-    ├── datasets/                   ← all datasets here
-    │   └── cat_or_notcat/
-    │       ├── train_catvnoncat.h5
-    │       └── test_catvnoncat.h5
-    │
-    ├── .gitignore
-    ├── requirements.txt
-    └── README.md
+        │
+        ├── notebooks/                  ← only .ipynb files here
+        │   ├── tensors_and_datasets.ipynb
+        │   ├── linear_regression.ipynb
+        │   ├── logistic_regression.ipynb
+        │   └── cat_or_notcat.ipynb
+        │
+        ├── saved_models/               ← all .pth files here
+        │   ├── linear_model.pth
+        │   └── logistic_regression_model.pth
+        │
+        ├── datasets/                   ← all datasets here
+        │   └── cat_or_notcat/
+        │       ├── train_catvnoncat.h5
+        │       └── test_catvnoncat.h5
+        │
+        ├── .gitignore
+        ├── requirements.txt
+        └── README.md
+
+First thing to do when you have created a new repo is to add a .gitignore file, because you don't want to accidentally commit large files like datasets or saved models, and you also don't want to commit unnecessary files like __pycache__ or .ipynb_checkpoints.
 
 gitignore guide:
     Easiest Solution — Use a Template
@@ -40,20 +64,21 @@ gitignore guide:
     New repo → Add .gitignore → select "Python" template
     It automatically covers most of these cases. Then you just add your project specific ones like datasets/ on top.
 
-pytorch learning journey:
-    25/02/2026: I tried using vs code jupyter to learn pytorch, but my vs code had some issues and i didn't know how to structure ML projects properly, so learned how to setup vs code, installed few extensions, used gitbash to create files and keep track of them, then learned tensors, linspace.
-    27/02/2026: matrix multiplication, datasets, transform.
-    28/02/2026: Saturday is a day off for me, played rdr2 for the whole day.
-    01/03/2026: Sunday, learned stacking, squeezing, unsqueezing, learned how to use gpu using cuda, built a linear regression model, where i trained the data, tested it, visualized it, saved the parameters using torch.save
-    02/03/2026: Monday, implemented logistic regression, saved the parameters, now i am moving on to learning CNNs and RNNs.
-    ------------------------------------------------------------------------------------------------------------------------------
-    12/03/2026: implemented cat or nocat dataset, strenthened my understanding, learned how to load h5 files, learned how to run the model using different hyperparameters using a user defined function for training the model and everytime you run the cell, the model is reinitialized and trained with the new hyperparameters.
-    ------------------------------------------------------------------------------------------------------------------------------
-    18/03/2026: learned how to implement cnn using pytorch and implementing cnn is difficult compared tensorflow, tensorflow is so simple and easy to use, it took me hours to learn torch cnn 😭.
-    19/03/2026: implementation of cnn in pytorch is complete, now i know the pipeline and how things work, but i think i still need practice to get used to it, because there are a lot of things to keep in mind, on every step i need to be aware of what's happening and what is the dimension of the data, one single mistake can breaks the whole thing.
-    next -> practice cnn more.
-    25/03/2026: built a model using resnet18 architecture, trained on animals10 dataset, got 96.50% accuracy on test set after data augmentation.
-    next -> more cnn practice, object localization using yolo.
-    ------------------------------------------------------------------------------------------------------------------------------01/04/2026: I was evaluating the facenet model on the lfw dataset on different thresholds then my venv broke because i updated my python version from python 3.10 to python 3.14, so i had to create a new venv and install all the packages again, but venv broke again because of some package incompatibility, so i had to uninstall new python version and reinstall python 3.10 and create a new venv and install all the packages again and this toke a lot of time becuase kernel was not detecting my venv, but finally i was able to fix it and now i am back to learning and evaluating the model.
-    02/04/2026: Evaluated the facenet model on lfw dataset and i found the best threshold that gave 96% accuracy on test set.
+Second thing to do is to create a requirements.txt file to list all the packages that you are going to use along with their versions to avoid compatibility issues in your project and you can easily install the packages using pip install -r requirements.txt.
+
+Third thing to do is create venv and install all the necessary packages to keep the repo organized and to avoid compatibility issues with other projects.
+
+## 🛠️ Getting Started
+
+1. **Clone the repo:** `git clone https://github.com/akhilesh488-byte/learning_pytorch.git`
+2. **Setup Venv:** `python -m venv venv` and activate it.
+3. **Install Dependencies:** `pip install -r requirements.txt`
+4. **Prepare Data:** Create a `/datasets` folder and download the links provided below.
+
+I have used datasets cat_nocat, hand_signs from my coursera assignments taught by deeplearning.ai, and animals10 and lfw datasets from kaggle.
+
+The datasets can be downloaded from the following links:
+    1. animals10 dataset: https://www.kaggle.com/datasets/alessiocorrado99/animals10
+    2. lfw dataset: https://www.kaggle.com/datasets/jessicali9530/lfw-dataset
+
 ```
